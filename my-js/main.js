@@ -12,7 +12,7 @@ var createStaff = function () {
   var position = document.getElementById("chucvu").value;
   var time = +document.getElementById("gioLam").value;
 
-  document.getElementById("tknv").disabled = false;
+  // document.getElementById("tknv").disabled = false;
 
   var newStaff = new staff(
     account,
@@ -81,8 +81,8 @@ var getStaff = function (id) {
 
   document.getElementById("btnThem").click();
   // document.getElementById("tknv").disabled = true;
-  document.getElementById("btnCapNhat").style.display = "block";
-  document.getElementById("btnThemNV").style.display = "none";
+  // document.getElementById("btnCapNhat").style.display = "block";
+  // document.getElementById("btnThemNV").style.display = "none";
 };
 
 ///---Luu thay doi
@@ -345,7 +345,6 @@ var limitNumber = function (value, spanId, min, max, message) {
 
 var pattern = function (value, spanId, regex) {
   if (!regex.test(value)) {
-    alert(value);
     document.getElementById(spanId).style.display = "block";
     document.getElementById(spanId).innerHTML = "* Không đúng định dạng";
     return false;
